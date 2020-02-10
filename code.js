@@ -11,5 +11,12 @@ const helloWorld = function() {
 // sayHello function
 
 function sayHello(input){
-    return "Hello, " + input + "!";
+
+    if(!isNaN(input) || typeof input !== "string") {
+        return "Hello, World!";
+    } else {
+        return "Hello, " + input + "!";
+    }
 }
+
+
