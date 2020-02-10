@@ -24,3 +24,14 @@ function sayHello(input){
 function isFive(input) {
     return parseFloat(input) === 5;
 }
+
+// isEven function
+
+function isEven(input) {
+
+    if (typeof input === "boolean") {
+        return false;
+    } else {
+        return input % 2 === 0;
+    }
+}
