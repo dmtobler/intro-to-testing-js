@@ -14,7 +14,6 @@ describe('helloWorld', function() {
     });
 });
 
-
 // Unit tests for sayHello function
 describe('sayHello', function() {
     it('should be a defined function', function() {
