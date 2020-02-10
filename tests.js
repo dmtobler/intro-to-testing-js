@@ -62,3 +62,19 @@ describe('sayHello', function() {
         expect(sayHello([1, 2, 3])).toBe('Hello, World!');
     });
 });
+
+// Unit tests for the isFive function
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean value when called', function() {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('isFive(5) should return true', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('isFive("5") should return true', function() {
+        expect(isFive("5")).toBe(true);
+    });
+});
