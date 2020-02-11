@@ -150,3 +150,32 @@ describe('isVowel', function() {
         expect(isVowel()).toBe(false);
     });
 });
+
+// Unit tests for add function
+
+describe('add', function() {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+    it('add(2, 3) returns 5', function () {
+        expect(add(2,3)).toBe(5);
+    });
+    it('add(-3, -9) returns -12', function () {
+        expect(add(-3,-9)).toBe(-12);
+    });
+    it('add("5", 6) returns 11', function () {
+        expect(add("5",6)).toBe(11);
+    });
+    it('add("5", 6) returns 11', function () {
+        expect(add("-4","10")).toBe(6);
+    });
+    it('add("banana", "split") returns NaN', function () {
+        expect(add("banana","split")).toBeNaN(NaN);
+    });
+    it('add(2, "apples") returns NaN', function () {
+        expect(add(2,"apples")).toBeNaN(NaN);
+    });
+    it('add() returns NaN', function () {
+        expect(add()).toBeNaN(NaN);
+    });
+});

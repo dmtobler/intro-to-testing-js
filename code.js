@@ -50,3 +50,9 @@ function isVowel(input) {
             return false;
     }
 }
+
+// add function
+
+function add(num1, num2) {
+    return parseFloat(num1) + parseFloat(num2);
+}
